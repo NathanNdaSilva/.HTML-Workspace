@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Samba na Cozinha | Cardápio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Samba na Cozinha</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link active" href="cardapio.html">Cardápio</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Accordion de categorias -->
+<div class="container mt-5">
+  <h2 class="mb-4">Nosso Cardápio</h2>
+  <div class="accordion" id="menuAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pratos">
+          Pratos principais
+        </button>
+      </h2>
+      <div id="pratos" class="accordion-collapse collapse show" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          - Feijoada da Casa<br>
+          - Moqueca de Camarão da Bahia<br>
+          - Baião de Dois Sertanejo<br>
+          - Galinhada com Axé<br>
+          - Vatapá do Pelô<br>
+          - Escondidinho do Samba<br>
+          - Picanha com Ginga
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sobremesas">
+          Sobremesas
+        </button>
+      </h2>
+      <div id="sobremesas" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+        <div class="accordion-body">
+          - Pudim do Mestre Cartola<br>
+          - Cocada Cremosa da Mangueira<br>
+          - Quindim da Vila Isabel
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
